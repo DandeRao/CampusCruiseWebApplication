@@ -1,0 +1,19 @@
+﻿
+<table class="table table-striped" >
+  <tr>
+    <th>University Name</th>
+    <th>University Id</th>
+    <th>Action</th>
+  </tr>
+  <tr *ngFor="let university of universities">
+    <td>{{university.universityName}}</td>
+    <td>{{university.universityId}}</td>
+    <td><input type="button" class="btn btn-success" value="Edit"/></td>
+  </tr>
+  <tr >
+    <td colspan="3" class="tableRow">
+      <a class="btn addUniversity" routerLink="/addUniversity"><i class="glyphicon glyphicon-plus-sign"></i> Add university</a>
+    </td>
+    </tr>
+</table>
+

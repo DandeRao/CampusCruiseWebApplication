@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\Views",
+    "\\src\\app\\Views\\Building",
+    "\\src\\app\\Views\\Building\\AddBuilding",
+    "\\src\\app\\Views\\Building\\EditBuilding"
+  ],
+  "SelectedNode": "\\src\\app\\Views\\Building\\EditBuilding\\building.html",
+  "PreviewInSolutionExplorer": false
+}

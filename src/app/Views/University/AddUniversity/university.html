@@ -1,0 +1,25 @@
+﻿<!--
+<form >
+  <button class="btn btn-primary" routerLink="adminHome">Click here to Login</button>
+</form>
+    -->
+
+<form (ngSubmit)="addUniversity()"  class ="col-xs-6 col-xs-offset-3 addUniversityForm">
+  <label for="universityName">University Name</label>
+  <input type="text" class="form-control " name="univeristyName" [(ngModel)]="universityName" id="universityName">
+  <br />
+  <label for="universityCoordinates">University Coordinates</label>
+  <input type="text" class="form-control " name="universityCoordinates" [(ngModel)]="universityCoordinates" id="universityCoordinates">
+  <br />
+
+
+  <label for="username">University Admin User Name</label>
+  <input type="text" class="form-control " name="username" [(ngModel)]="userName" id="userName">
+  <br />
+  <label for="password">Password for the university admin</label>
+  <input type="password"  class="form-control " name="password" [(ngModel)]="password" id="password" ngModel>
+  <br />
+  <button type="submit" class="btn btn-success col-xs-3 col-xs-offset-2 ">Add University</button>
+  <button type="submit" class="btn btn-danger col-xs-3 col-xs-offset-1 ">Cancel</button>
+  
+</form>

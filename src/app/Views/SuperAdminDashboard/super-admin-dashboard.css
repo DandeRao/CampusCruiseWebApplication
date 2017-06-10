@@ -1,0 +1,41 @@
+﻿.navbar.navbar-inverse {
+background-color:green;
+color:white;
+}
+.navbar-brand{
+  color:white;
+
+}
+
+.divider {
+  border: none;
+  height: 1px;
+  /* Set the hr color */
+  color: green; /* old IE */
+  background-color: green; /* Modern Browsers */
+}
+
+.buildingForm {
+  border-color: green;
+  background-color: white;
+  border-style: solid;
+  border-width: 1px;
+  padding: 10px 10px 10px 10px;
+}
+
+.glyphicon.glyphicon-plus-sign {
+
+  font-size:25px;
+}
+
+.addUniversity {
+  font-size: 25px;
+  text-align: center;
+  color: green;
+}
+
+.tableRow{
+
+  text-align:center;
+
+}

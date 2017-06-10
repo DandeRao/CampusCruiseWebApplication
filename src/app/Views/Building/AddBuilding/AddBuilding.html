@@ -1,0 +1,48 @@
+﻿<form class="buildingForm col-xs-6 col-xs-offset-2">
+  <br />
+  <br />
+  <label for="buildingName">Building Name:</label>
+  <input class="form-control" type="text"  [(ngModel)]="building.buildingName" name="buildingName" />
+  <label for="buildingCoordinates">Building Coordinates:</label>
+  <input class="form-control" type="text" [(ngModel)]="building.buildingCoordinates" name="buildingCoordinates" />
+
+  <br />
+  <br />
+  <strong>Media</strong>
+  <div class="panel-group" id="#accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#Images">Images</a>
+        </h4>
+      </div>
+      <div id="Images" class="panel-collapse collapse">
+        <div class="panel-body">
+        
+            <button class="btn btn-primary" (click)="addImage()">Add Images</button>
+          
+          
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Videos</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">
+          <button class="btn btn-success"> Add Videos</button>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <button type="submit" class="btn btn-success editBuilding col-xs-3 col-xs-offset-3" (click)="addBuilding()">Add Building</button>
+
+  <button class="btn btn-danger editBuilding col-xs-3 col-xs-offset-1" (click)="backClicked()"> Cancel</button>
+
+</form>

@@ -1,0 +1,26 @@
+﻿.icon, .navbar-brand {
+    border-color: white;
+    padding-left: 10px;
+    color: white;
+}
+
+    .icon:hover {
+        color: black;
+    }
+
+.navbar {
+    background-color: green;
+}
+
+.loginButton {
+    background-color: green;
+    border-color: white;
+    color: white;
+    margin-top:8px;
+    margin-right:10px;
+}
+
+.introduction {
+    background-color: lightgreen;
+}
+

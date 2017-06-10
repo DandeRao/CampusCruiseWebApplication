@@ -1,0 +1,6 @@
+﻿{
+            "buildings.$.buildingName": newBuilding.buildingName,
+            "buildings.$.buildingCoordinates": newBuilding.buildingCoordinates,
+            "buildings.$.tourPosition": newBuilding.tourPosition,
+            "buildings.$.universityId": newBuilding.universityId
+        }

@@ -1,0 +1,56 @@
+﻿<form class="buildingForm col-xs-6 col-xs-offset-2" >
+  <label for="buildingName">Building Name:</label>
+  <input class="form-control" type="text" name ="building.buildingName" [(ngModel)]="building.buildingName" />
+  <label for="buildingCoordinates">Building Coordinates:</label>
+  <input class="form-control" type="text" name="buildingCoordinates" [(ngModel)]="building.buildingCoordinates" />
+  <label *ngIf="building.tourPosition >-1" for="tourPosition">Tour Position:</label>
+  <input *ngIf="building.tourPosition >-1" class="form-control" type="text" value="{{building.tourPosition}}" />
+  <h5 *ngIf="building.tourPosition ===-1"> <strong>Optional Building; Not in Tour. </strong><br />Add to tour: <input type="checkbox" placeholder="Add to tour" /></h5>
+  <br />
+
+  <strong>Media</strong>
+  <div class="panel-group" id="#accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#Images">Images</a>
+        </h4>
+      </div>
+      <div id="Images" class="panel-collapse collapse">
+        <div class="panel-body">
+          <img [src]="imageSrc"
+               (load)="handleImageLoad()"
+               [class.loaded]="imageLoaded" />
+          <input class="btn btn-primary" type="file" (change)="addImage($event)" value="Add Images"/>
+          <table class="table table-striped">
+            <tr>
+              <th>File Name</th>
+            </tr>
+            <tr>
+              <th *ngFor="let image of images">
+                {{image.name}}
+              </th>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Videos</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">
+          <button class="btn btn-success"> Add Videos</button>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <button type="submit" class="btn btn-success editBuilding col-xs-3 col-xs-offset-2" (click)="updateBuilding()"> Edit Building</button>
+  <button class="btn btn-danger cancel col-xs-3 col-xs-offset-1" (click)="backClicked()"> Cancel</button>
+</form>
